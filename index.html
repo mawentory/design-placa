@@ -1,0 +1,1500 @@
+<!doctype html>
+<html lang="en" data-theme="placa">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#e7ebe6" />
+    <meta name="color-scheme" content="light" />
+    <title>Placa — component gallery</title>
+    <meta
+      name="description"
+      content="Every component of the Placa design (Signage on drawing paper), rendered on one page from its own tokens."
+    />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23e7ebe6'/%3E%3Cpath d='M8 10h7a3 3 0 0 1 3 3v6a3 3 0 0 0 3 3h3' stroke='%23142029' stroke-width='2.4' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='8' cy='10' r='2.6' fill='%23142029'/%3E%3Ccircle cx='24' cy='22' r='2.6' fill='%23f2a007'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="theme.css" />
+    <link rel="stylesheet" href="design.css" />
+  </head>
+  <body>
+    <a class="skip" href="#content">Skip to content</a>
+
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="#top">
+          <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true">
+            <path
+              d="M3 16h11l6-7h9M14 16h15M14 16l6 7h9"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <circle cx="14" cy="16" r="3.6" fill="var(--signal)" stroke="currentColor" stroke-width="1.6" />
+          </svg>
+          <span>Placa</span>
+        </a>
+        <nav class="topnav" aria-label="Sections">
+          <a href="#foundations">Foundations</a>
+          <a href="#typography">Type</a>
+          <a href="#forms">Forms</a>
+          <a href="#buttons">Buttons</a>
+          <a href="#status">Status</a>
+          <a href="#containment">Containment</a>
+          <a href="#navigation">Navigation</a>
+          <a href="#data">Data</a>
+          <a href="#tokens">Tokens</a>
+        </nav>
+        <span class="badge badge-ok"><span class="dot" aria-hidden="true"></span>Light</span>
+      </div>
+    </header>
+
+    <main id="content">
+      <div class="wrap">
+        <div class="hero" id="top">
+          <p class="eyebrow">placa · design reference</p>
+          <h1>Placa</h1>
+          <p class="lede">
+            Signage on drawing paper. One page, every component, all 79 tokens. Nothing here is a
+            screenshot — swap <code>theme.css</code> and the whole gallery changes with it.
+          </p>
+          <div class="row" style="margin-top: 24px">
+            <a class="btn btn-primary" href="#components">Browse components</a>
+            <a class="btn btn-ghost" href="#tokens">See the tokens</a>
+          </div>
+        </div>
+
+        <!-- ================= Foundations ================= -->
+        <section id="foundations">
+          <div class="section-head">
+            <h2>Colour</h2>
+            <p>Swatches read from the live tokens</p>
+          </div>
+          <div class="swatch-grid">                <div class="swatch">
+                  <div class="swatch-chip" style="background: var(--paper)"></div>
+                  <div class="swatch-meta">
+                    <span class="swatch-name">paper</span>
+                    <span class="swatch-val">#e7ebe6</span>
+                  </div>
+                </div>
+                <div class="swatch">
+                  <div class="swatch-chip" style="background: var(--paper-2)"></div>
+                  <div class="swatch-meta">
+                    <span class="swatch-name">paper-2</span>
+                    <span class="swatch-val">#dce2dc</span>
+                  </div>
+                </div>
+                <div class="swatch">
+                  <div class="swatch-chip" style="background: var(--sheet)"></div>
+                  <div class="swatch-meta">
+                    <span class="swatch-name">sheet</span>
+                    <span class="swatch-val">#f3f5f1</span>
+                  </div>
+                </div>
+                <div class="swatch">
+                  <div class="swatch-chip" style="background: var(--ink)"></div>
+                  <div class="swatch-meta">
+                    <span class="swatch-name">ink</span>
+                    <span class="swatch-val">#142029</span>
+                  </div>
+                </div>
+                <div class="swatch">
+                  <div class="swatch-chip" style="background: var(--ink-2)"></div>
+                  <div class="swatch-meta">
+                    <span class="swatch-name">ink-2</span>
+                    <span class="swatch-val">#4b5a63</span>
+                  </div>
+                </div>
+                <div class="swatch">
+                  <div class="swatch-chip" style="background: var(--ink-3)"></div>
+                  <div class="swatch-meta">
+                    <span class="swatch-name">ink-3</span>
+                    <span class="swatch-val">#75847f</span>
+                  </div>
+                </div>
+                <div class="swatch">
+                  <div class="swatch-chip" style="background: var(--rule)"></div>
+                  <div class="swatch-meta">
+                    <span class="swatch-name">rule</span>
+                    <span class="swatch-val">#c2cbc4</span>
+                  </div>
+                </div>
+                <div class="swatch">
+                  <div class="swatch-chip" style="background: var(--signal)"></div>
+                  <div class="swatch-meta">
+                    <span class="swatch-name">signal</span>
+                    <span class="swatch-val">#f2a007</span>
+                  </div>
+                </div>
+                <div class="swatch">
+                  <div class="swatch-chip" style="background: var(--signal-soft)"></div>
+                  <div class="swatch-meta">
+                    <span class="swatch-name">signal-soft</span>
+                    <span class="swatch-val">#f9d98c</span>
+                  </div>
+                </div>
+                <div class="swatch">
+                  <div class="swatch-chip" style="background: var(--add)"></div>
+                  <div class="swatch-meta">
+                    <span class="swatch-name">add</span>
+                    <span class="swatch-val">#1d7a4e</span>
+                  </div>
+                </div>
+                <div class="swatch">
+                  <div class="swatch-chip" style="background: var(--del)"></div>
+                  <div class="swatch-meta">
+                    <span class="swatch-name">del</span>
+                    <span class="swatch-val">#b23a3a</span>
+                  </div>
+                </div>
+                <div class="swatch">
+                  <div class="swatch-chip" style="background: var(--board)"></div>
+                  <div class="swatch-meta">
+                    <span class="swatch-name">board</span>
+                    <span class="swatch-val">#142029</span>
+                  </div>
+                </div>
+                <div class="swatch">
+                  <div class="swatch-chip" style="background: var(--board-text)"></div>
+                  <div class="swatch-meta">
+                    <span class="swatch-name">board-text</span>
+                    <span class="swatch-val">#e7ebe6</span>
+                  </div>
+                </div>
+                <div class="swatch">
+                  <div class="swatch-chip" style="background: var(--accent-2)"></div>
+                  <div class="swatch-meta">
+                    <span class="swatch-name">accent-2</span>
+                    <span class="swatch-val">#23384a</span>
+                  </div>
+                </div>
+                <div class="swatch">
+                  <div class="swatch-chip" style="background: var(--accent-3)"></div>
+                  <div class="swatch-meta">
+                    <span class="swatch-name">accent-3</span>
+                    <span class="swatch-val">#f9d98c</span>
+                  </div>
+                </div></div>
+
+          <div class="grid cols-2" style="margin-top: 20px">
+            <div class="panel">
+              <h3>Shape and depth</h3>
+              <p class="panel-note">
+                Radii 4px / 10px / 18px · border --bw 2px · heavy --bw-heavy 3px ·
+                rule --rule-w 1px
+              </p>
+              <div class="grid cols-4" style="gap: 12px">
+                <div>
+                  <div style="height: 58px; border-radius: var(--r-sm); border: var(--bw) solid var(--ink); background: var(--sheet)"></div>
+                  <p class="hint" style="margin-top: 6px">--r-sm</p>
+                </div>
+                <div>
+                  <div style="height: 58px; border-radius: var(--r-md); border: var(--bw) solid var(--ink); background: var(--sheet)"></div>
+                  <p class="hint" style="margin-top: 6px">--r-md</p>
+                </div>
+                <div>
+                  <div style="height: 58px; border-radius: var(--r-lg); border: var(--bw) solid var(--ink); background: var(--sheet)"></div>
+                  <p class="hint" style="margin-top: 6px">--r-lg</p>
+                </div>
+                <div>
+                  <div style="height: 58px; border-radius: var(--r-pill); border: var(--bw) solid var(--ink); background: var(--sheet)"></div>
+                  <p class="hint" style="margin-top: 6px">--r-pill</p>
+                </div>
+              </div>
+              <div class="grid cols-2" style="margin-top: 16px">
+                <div class="panel" style="box-shadow: var(--shadow-card)">
+                  <p class="small">--shadow-card</p>
+                </div>
+                <div class="panel" style="box-shadow: var(--shadow-panel)">
+                  <p class="small">--shadow-panel</p>
+                </div>
+              </div>
+              <div class="divider" style="margin: 18px 0"></div>
+              <hr />
+              <p class="hint" style="margin-top: 8px">
+                The hairline above is a real <code>&lt;hr&gt;</code>, drawn with --rule-w and
+                --rule-style.
+              </p>
+            </div>
+
+            <div class="panel">
+              <h3>Icons</h3>
+              <p class="panel-note">Strokes ride on currentColor, so icons inherit the ink.</p>
+              <div class="btn-row">
+                <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                  <path d="M4 12h16M12 4v16" />
+                </svg>
+                <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                  <circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 2" />
+                </svg>
+                <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                  <path d="M12 3v18M5 8l7-5 7 5v8l-7 5-7-5z" />
+                </svg>
+                <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                  <path d="M4 7h16M4 12h10M4 17h7" />
+                </svg>
+                <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                  <circle cx="12" cy="12" r="3" /><path d="M12 2v3M12 19v3M2 12h3M19 12h3" />
+                </svg>
+              </div>
+              <p class="hint" style="margin-top: 14px">
+                Icons here are decorative and marked <code>aria-hidden</code>; a control that
+                shows only an icon carries an <code>aria-label</code> instead.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid cols-2" style="margin-top: 20px">
+            <div class="panel" style="background: var(--ink); color: var(--paper); border-color: var(--ink)">
+              <h3 style="color: var(--paper)">Inverted surface</h3>
+              <p class="panel-note" style="color: var(--on-ink-muted)">
+                --ink as a background, --paper as text. Headers and footers use this.
+              </p>
+              <div class="row">
+                <span class="badge" style="border-color: currentColor">On ink</span>
+                <button class="btn btn-small" type="button" style="background: var(--paper); color: var(--ink)">Inverted button</button>
+              </div>
+            </div>
+            <div class="panel" style="background: var(--board); color: var(--board-text); border-color: var(--board-rule)">
+              <h3 style="color: var(--board-text)">Board surface</h3>
+              <p class="panel-note" style="color: var(--board-dim-text)">
+                --board is the code and log surface: recessed, not raised.
+              </p>
+              <p class="mono" style="font-size: 0.8125rem">
+                <span style="color: var(--ok-board)">ok</span> ·
+                <span style="color: var(--err-board)">error</span> ·
+                <span style="color: var(--board-dim-text)">dim</span>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= Typography ================= -->
+        <section id="typography">
+          <div class="section-head">
+            <h2>Typography</h2>
+            <p>Overpass and Overpass Mono.</p>
+          </div>
+
+          <div class="grid cols-2">
+            <div class="panel">
+              <h3>Headings</h3>
+              <p class="panel-note">Display levels, then body levels.</p>
+              <div class="stack-sm">
+                <p class="display-1">Endpoint</p>
+                <p class="display-2">One endpoint, every model</p>
+                <p class="display-3">Requests route by model</p>
+                <!-- Heading samples are paragraphs styled as headings on purpose: the
+                     page keeps exactly one real h1 and an unbroken heading order. -->
+                <p class="sample-h1">Sample h1 — heading level one</p>
+                <p class="sample-h2">Sample h2 — heading level two</p>
+                <p class="sample-h3">Sample h3 — heading level three</p>
+                <p class="sample-h4">Sample h4 — heading level four</p>
+              </div>
+            </div>
+
+            <div class="panel">
+              <h3>Body and inline</h3>
+              <p class="panel-note">Measure, weight and inline semantics.</p>
+              <div class="stack-sm">
+                <p class="lead">Lead paragraph, for the sentence under a title.</p>
+                <p>
+                  Body copy sits at the base size with a line height around 1.6, which keeps
+                  a paragraph of real content readable in this design.
+                </p>
+                <p class="small muted">Small muted text, for captions and metadata.</p>
+                <p>
+                  Inline support: <strong class="strong">bold</strong>, <em>italic</em>,
+                  <a href="#typography">a link</a>, <code>code()</code>,
+                  <span class="mark">highlighted</span>,
+                  <abbr class="abbr" title="Application Programming Interface">API</abbr>,
+                  and <kbd>⌘K</kbd>.
+                </p>
+                <blockquote class="blockquote">
+                  The model field decides the route; the rest of your request never changes.
+                  <footer>Design note, Placa</footer>
+                </blockquote>
+              </div>
+            </div>
+
+            <div class="panel">
+              <h3>Lists</h3>
+              <p class="panel-note">Checklist and numbered list carry their own markers.</p>
+              <div class="grid cols-2">
+                <ul class="list-check">
+                  <li>OpenAI-compatible</li>
+                  <li>Per-key records</li>
+                  <li>Invite or admin grant</li>
+                </ul>
+                <ol class="list-num">
+                  <li>Create a key</li>
+                  <li>Point your client at the base URL</li>
+                  <li>Send the same request</li>
+                </ol>
+              </div>
+              <dl class="dl" style="margin-top: 20px">
+                <dt>Base URL</dt>
+                <dd class="mono">https://api.example/v1</dd>
+                <dt>Auth</dt>
+                <dd>Bearer key</dd>
+                <dt>Streaming</dt>
+                <dd>Supported, server-sent events</dd>
+              </dl>
+            </div>
+
+            <div class="panel">
+              <h3>Wrapping and long values</h3>
+              <p class="panel-note">A narrow container must not break the layout.</p>
+              <div class="stack-sm">
+                <div class="wrap-demo">
+                  <p>
+                    A long paragraph inside a 300px column wraps without overflowing or
+                    pushing the panel wider.
+                  </p>
+                </div>
+                <div class="wrap-demo">
+                  <p class="long-token">
+                    sk-live-9f2c7ab41d8e5b0c6f3a1e7d4b8c2a95f0e6d3b7c1a4f8e2
+                  </p>
+                </div>
+                <p class="mono small muted">Both stay inside the box.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= Forms ================= -->
+        <section id="forms">
+          <div class="section-head">
+            <h2>Forms</h2>
+            <p>Inputs, validation and selection</p>
+          </div>
+
+          <div class="grid cols-2">
+            <div class="panel">
+              <h3>Text inputs</h3>
+              <p class="panel-note">Every input has a visible label, never a placeholder alone.</p>
+              <div class="stack">
+                <div class="field">
+                  <label for="i-text">Key name</label>
+                  <input class="input" id="i-text" value="production" />
+                </div>
+                <div class="field">
+                  <label for="i-ph">With placeholder</label>
+                  <input class="input" id="i-ph" placeholder="e.g. staging" />
+                </div>
+                <div class="field">
+                  <label for="i-help">With help text</label>
+                  <input class="input" id="i-help" value="team-alpha" aria-describedby="i-help-hint" />
+                  <span class="hint" id="i-help-hint">Letters, numbers and dashes only.</span>
+                </div>
+                <div class="field">
+                  <label for="i-dis">Disabled</label>
+                  <input class="input" id="i-dis" value="managed by admin" disabled />
+                </div>
+                <div class="field">
+                  <label for="i-read">Read-only</label>
+                  <input class="input" id="i-read" value="sk-live-000" readonly />
+                </div>
+              </div>
+            </div>
+
+            <div class="panel">
+              <h3>Validation</h3>
+              <p class="panel-note">The message names the problem; colour is only a hint.</p>
+              <div class="stack">
+                <div class="field">
+                  <label for="v-ok">Valid</label>
+                  <input class="input is-valid" id="v-ok" value="openai/gpt-4.1" aria-describedby="v-ok-fb" />
+                  <span class="valid-feedback" id="v-ok-fb">Model is available in this Pack.</span>
+                </div>
+                <div class="field">
+                  <label for="v-bad">Invalid</label>
+                  <input class="input is-invalid" id="v-bad" value="openai/gpt-9" aria-invalid="true" aria-describedby="v-bad-fb" />
+                  <span class="invalid-feedback" id="v-bad-fb">No such model. Try openai/gpt-4.1.</span>
+                </div>
+                <div class="field">
+                  <label for="v-warn">Warning</label>
+                  <input class="input" id="v-warn" value="mistral-large" aria-describedby="v-warn-fb" />
+                  <span class="hint" id="v-warn-fb">This model is degraded right now.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel">
+              <h3>Select, textarea and file</h3>
+              <p class="panel-note">Native controls, restyled — not replaced.</p>
+              <div class="stack">
+                <div class="field">
+                  <label for="s-1">Pack</label>
+                  <select class="select" id="s-1">
+                    <option>Starter</option>
+                    <option selected>Team</option>
+                    <option>Scale</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="s-2">Note</label>
+                  <textarea class="textarea" id="s-2">Used by the ingest worker.</textarea>
+                </div>
+                <div class="field">
+                  <label for="s-3">Attach a file</label>
+                  <input class="input" id="s-3" type="file" />
+                </div>
+                <div class="field">
+                  <label for="s-4">Daily limit</label>
+                  <input class="range" id="s-4" type="range" min="0" max="100" value="62" aria-describedby="s-4-fb" />
+                  <span class="hint" id="s-4-fb">62% of the Pack allowance.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel">
+              <h3>Input group</h3>
+              <p class="panel-note">Addons and buttons join to a field.</p>
+              <div class="stack">
+                <div class="input-group">
+                  <span class="addon">https://</span>
+                  <input class="input" value="api.example" aria-label="Host" />
+                </div>
+                <div class="input-group">
+                  <input class="input" value="sk-live-000" aria-label="API key" />
+                  <button class="btn btn-soft" type="button">Copy</button>
+                </div>
+                <div class="input-group">
+                  <input class="input" value="gpt-4.1" aria-label="Model" />
+                  <button class="btn btn-primary" type="button">Check</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel">
+              <h3>Checkbox and radio</h3>
+              <p class="panel-note">Grouped in a fieldset with a legend.</p>
+              <div class="stack">
+                <fieldset>
+                  <legend>Records</legend>
+                  <div class="stack-sm">
+                    <label class="check"><input type="checkbox" checked /><span>Keep a record of every request</span></label>
+                    <label class="check"><input type="checkbox" /><span>Include the response body</span></label>
+                    <label class="check"><input type="checkbox" /><span>Email me near the limit</span></label>
+                  </div>
+                </fieldset>
+                <fieldset>
+                  <legend>Routing</legend>
+                  <div class="stack-sm">
+                    <label class="radio"><input type="radio" name="routing" checked /><span>By model field</span></label>
+                    <label class="radio"><input type="radio" name="routing" /><span>By header</span></label>
+                    <label class="radio"><input type="radio" name="routing" /><span>Failover only</span></label>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+
+            <div class="panel">
+              <h3>Switch and chips</h3>
+              <p class="panel-note">Chips are buttons: they toggle with aria-pressed.</p>
+              <div class="switch-stack">
+                <label class="switch">
+                  <input type="checkbox" checked />
+                  <span class="switch-track"><span class="switch-knob"></span></span>
+                  <span>Streaming</span>
+                </label>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="switch-track"><span class="switch-knob"></span></span>
+                  <span>Fixtures</span>
+                </label>
+                <div class="divider"></div>
+                <div class="chip-row" role="group" aria-label="Filter by status">
+                  <button class="chip" type="button" aria-pressed="true">All <span class="chip-count">24</span></button>
+                  <button class="chip" type="button" aria-pressed="false">Healthy <span class="chip-count">19</span></button>
+                  <button class="chip" type="button" aria-pressed="false">Degraded <span class="chip-count">4</span></button>
+                  <button class="chip" type="button" aria-pressed="false">Failed <span class="chip-count">1</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= Buttons ================= -->
+        <section id="buttons">
+          <div class="section-head">
+            <h2>Buttons</h2>
+            <p>Variants, sizes and states</p>
+          </div>
+
+          <div class="grid cols-2">
+            <div class="panel">
+              <h3>Variants</h3>
+              <p class="panel-note">One primary per view; the rest are secondary.</p>
+              <div class="stack-sm">
+                <div class="btn-row">
+                  <button class="btn btn-primary" type="button">Send request</button>
+                  <button class="btn btn-ghost" type="button">How it works</button>
+                </div>
+                <div class="btn-row">
+                  <button class="btn btn-signal" type="button">Create key</button>
+                  <button class="btn btn-soft" type="button">Copy</button>
+                </div>
+                <div class="btn-row">
+                  <button class="btn btn-link" type="button">Back to Auto</button>
+                  <a class="btn btn-primary" href="#buttons">A link styled as a button</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel">
+              <h3>Sizes and states</h3>
+              <p class="panel-note">Small, icon, disabled, loading and block.</p>
+              <div class="stack-sm">
+                <div class="btn-row">
+                  <button class="btn btn-primary" type="button">Default</button>
+                  <button class="btn btn-primary btn-small" type="button">Small</button>
+                  <button class="btn btn-ghost btn-icon" type="button" aria-label="Add">+</button>
+                </div>
+                <div class="btn-row">
+                  <button class="btn btn-primary" type="button" disabled>Disabled</button>
+                  <button class="btn btn-primary" type="button">
+                    <span class="spinner" style="width: 14px; height: 14px; border-width: 2px"></span>
+                    Sending
+                  </button>
+                </div>
+                <button class="btn btn-primary btn-block" type="button">Block button</button>
+              </div>
+            </div>
+
+            <div class="panel">
+              <h3>Button group</h3>
+              <p class="panel-note">Segmented control; the pressed item is marked.</p>
+              <div class="btn-group" role="group" aria-label="Time range">
+                <button class="btn" type="button" aria-pressed="true">24h</button>
+                <button class="btn" type="button" aria-pressed="false">7d</button>
+                <button class="btn" type="button" aria-pressed="false">30d</button>
+              </div>
+            </div>
+
+            <div class="panel">
+              <h3>Loading indicators</h3>
+              <p class="panel-note">Spinner for the short wait, skeleton for the page.</p>
+              <div class="stack">
+                <div class="row">
+                  <span class="spinner" role="status" aria-label="Loading"></span>
+                  <span class="hint">Spinner, with a text label for screen readers.</span>
+                </div>
+                <div class="stack-sm">
+                  <div class="skeleton skeleton-lg"></div>
+                  <div class="skeleton" style="width: 100%"></div>
+                  <div class="skeleton" style="width: 80%"></div>
+                  <div class="skeleton" style="width: 45%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= Status ================= -->
+        <section id="status">
+          <div class="section-head">
+            <h2>Status and feedback</h2>
+            <p>Alerts, badges and messages</p>
+          </div>
+
+          <div class="grid cols-2">
+            <div class="panel">
+              <h3>Badges</h3>
+              <p class="panel-note">Each badge pairs colour with a word.</p>
+              <div class="btn-row">
+                <span class="badge badge-ok"><span class="dot" aria-hidden="true"></span>Healthy</span>
+                <span class="badge badge-warn"><span class="dot" aria-hidden="true"></span>Degraded</span>
+                <span class="badge badge-err"><span class="dot" aria-hidden="true"></span>Failed</span>
+                <span class="badge">Draft</span>
+              </div>
+              <div class="btn-row" style="margin-top: 14px">
+                <span class="pill">Default pill</span>
+                <span class="pill pill-signal">Signal pill</span>
+                <span class="pill mono">v0.2.0</span>
+              </div>
+              <div class="btn-row" style="margin-top: 14px">
+                <span class="choice-dot" style="color: var(--signal)" aria-hidden="true"></span>
+                <span class="choice-dot" style="color: var(--add)" aria-hidden="true"></span>
+                <span class="choice-dot" style="color: var(--del)" aria-hidden="true"></span>
+                <span class="hint">choice-dot, inherits currentColor</span>
+              </div>
+            </div>
+
+            <div class="panel">
+              <h3>Alerts</h3>
+              <p class="panel-note">A left rule carries severity; the text confirms it.</p>
+              <div class="stack-sm">
+                <div class="alert alert-info">
+                  <span aria-hidden="true">i</span>
+                  <span><strong>Streaming is on</strong>Responses arrive as they are produced.</span>
+                </div>
+                <div class="alert alert-ok">
+                  <span aria-hidden="true">✓</span>
+                  <span><strong>Key created</strong>Copy it now — it is shown once.</span>
+                </div>
+                <div class="alert alert-err">
+                  <span aria-hidden="true">!</span>
+                  <span><strong>Request rejected</strong>The model is not in this Pack.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel">
+              <h3>Toast</h3>
+              <p class="panel-note">For something that already happened; it has one action.</p>
+              <div class="stack-sm">
+                <div class="toast" role="status">
+                  <span class="dot" style="color: var(--ok-board); margin-top: 7px" aria-hidden="true"></span>
+                  <span>
+                    <span class="toast-title">Changes saved</span>
+                    Your Pack now routes to six models.
+                  </span>
+                  <button class="btn btn-link btn-small" type="button">Undo</button>
+                </div>
+                <div class="toast" role="status">
+                  <span class="dot" style="color: var(--err-board); margin-top: 7px" aria-hidden="true"></span>
+                  <span>
+                    <span class="toast-title">Key revoked</span>
+                    Requests using it now fail.
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel">
+              <h3>Tooltip</h3>
+              <p class="panel-note">Explains an abbreviation; never the only source of meaning.</p>
+              <div class="tooltip-demo">
+                <span class="tooltip-bubble" role="tooltip">Rotate without dropping requests</span>
+                <span class="badge">
+                  <abbr class="abbr" title="Rotate without dropping requests">Zero-downtime</abbr>
+                </span>
+              </div>
+            </div>
+
+            <div class="panel">
+              <h3>Empty state</h3>
+              <p class="panel-note">Says what is missing and what to do next.</p>
+              <div class="empty">
+                <h3>No keys yet</h3>
+                <p class="small">Create a key to start sending requests.</p>
+                <button class="btn btn-primary btn-small" type="button">Create key</button>
+              </div>
+            </div>
+
+            <div class="panel">
+              <h3>Progress</h3>
+              <p class="panel-note">The value is in the text, not only the bar width.</p>
+              <div class="stack">
+                <div>
+                  <div class="meter-row"><span>Monthly tokens</span><span class="mono">62%</span></div>
+                  <div class="meter" role="img" aria-label="62 percent of the monthly token allowance used">
+                    <span style="width: 62%"></span>
+                  </div>
+                </div>
+                <div>
+                  <div class="meter-row"><span>Requests</span><span class="mono">93%</span></div>
+                  <div class="meter" role="img" aria-label="93 percent of the request allowance used">
+                    <span style="width: 93%; background: var(--del)"></span>
+                  </div>
+                </div>
+                <div class="row">
+                  <span class="spinner" style="width: 16px; height: 16px; border-width: 2px" aria-hidden="true"></span>
+                  <span class="hint">Provisioning a new slot…</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= Containment ================= -->
+        <section id="containment">
+          <div class="section-head">
+            <h2>Containment</h2>
+            <p>Cards, dialogs, drawers and disclosure</p>
+          </div>
+
+          <div class="grid cols-3">
+            <div class="card">
+              <div class="card-media"></div>
+              <div class="card-body">
+                <h3>Card with media</h3>
+                <p class="small muted">A raised surface with a header, body and footer.</p>
+              </div>
+              <div class="card-foot">
+                <span class="badge badge-ok"><span class="dot" aria-hidden="true"></span>Active</span>
+                <button class="btn btn-ghost btn-small" type="button">Open</button>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <h3>Plain card</h3>
+                <p class="small muted">No media, same frame.</p>
+                <div class="stat">
+                  <span class="stat-label">Models</span>
+                  <span class="stat-value">6</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-label">Keys</span>
+                  <span class="stat-value">3</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <h3>Interactive card</h3>
+                <p class="small muted">This whole card is a link target.</p>
+                <a class="btn btn-soft btn-small" href="#containment">Open details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid cols-2" style="margin-top: 20px">
+            <div class="panel">
+              <h3>Dialog</h3>
+              <p class="panel-note">A real dialog: focus moves in, Escape closes it.</p>
+              <div class="btn-row">
+                <button class="btn btn-primary" type="button" data-open-dialog="demo-dialog">
+                  Delete this key
+                </button>
+                <button class="btn btn-ghost" type="button" data-open-dialog="form-dialog">
+                  New Pack
+                </button>
+              </div>
+              <dialog class="dialog" id="demo-dialog" aria-labelledby="demo-dialog-title">
+                <div class="dialog-head">
+                  <h3 id="demo-dialog-title">Delete this key?</h3>
+                  <button class="icon-btn" type="button" data-close-dialog aria-label="Close dialog">×</button>
+                </div>
+                <div class="dialog-body">
+                  <p>
+                    Requests using <span class="mono">sk-live-000</span> will fail immediately.
+                    This cannot be undone.
+                  </p>
+                </div>
+                <div class="dialog-foot">
+                  <button class="btn btn-ghost btn-small" type="button" data-close-dialog>Keep it</button>
+                  <button class="btn btn-primary btn-small" type="button" data-close-dialog>Delete key</button>
+                </div>
+              </dialog>
+              <dialog class="dialog" id="form-dialog" aria-labelledby="form-dialog-title">
+                <div class="dialog-head">
+                  <h3 id="form-dialog-title">New Pack</h3>
+                  <button class="icon-btn" type="button" data-close-dialog aria-label="Close dialog">×</button>
+                </div>
+                <div class="dialog-body">
+                  <div class="field">
+                    <label for="d-name">Name</label>
+                    <input class="input" id="d-name" placeholder="e.g. Research" />
+                  </div>
+                </div>
+                <div class="dialog-foot">
+                  <button class="btn btn-ghost btn-small" type="button" data-close-dialog>Cancel</button>
+                  <button class="btn btn-primary btn-small" type="button" data-close-dialog>Create Pack</button>
+                </div>
+              </dialog>
+            </div>
+
+            <div class="panel">
+              <h3>Drawer</h3>
+              <p class="panel-note">Slides from the trailing edge for detail without a page change.</p>
+              <div class="btn-row">
+                <button class="btn btn-ghost" type="button" data-open-dialog="demo-drawer">Open drawer</button>
+              </div>
+              <dialog class="drawer" id="demo-drawer" aria-labelledby="drawer-title">
+                <div class="dialog-head">
+                  <h3 id="drawer-title">sk-live-000</h3>
+                  <button class="icon-btn" type="button" data-close-dialog aria-label="Close drawer">×</button>
+                </div>
+                <div class="dialog-body">
+                  <dl class="dl">
+                    <dt>Created</dt>
+                    <dd>4 Nov 2026</dd>
+                    <dt>Pack</dt>
+                    <dd>Team</dd>
+                    <dt>Last used</dt>
+                    <dd>2 minutes ago</dd>
+                  </dl>
+                </div>
+                <div class="dialog-foot">
+                  <button class="btn btn-ghost btn-small" type="button" data-close-dialog>Close</button>
+                </div>
+              </dialog>
+            </div>
+
+            <div class="panel">
+              <h3>Accordion</h3>
+              <p class="panel-note">Native disclosure elements; the marker is text, not an image.</p>
+              <div class="accordion">
+                <details open>
+                  <summary>How does routing work?</summary>
+                  <div class="accordion-body">
+                    The <span class="mono">model</span> field selects the provider. Strip the
+                    prefix and it routes by name.
+                  </div>
+                </details>
+                <details>
+                  <summary>What happens on failover?</summary>
+                  <div class="accordion-body">
+                    The request is retried against the next healthy model in the Pack.
+                  </div>
+                </details>
+                <details>
+                  <summary>Are responses stored?</summary>
+                  <div class="accordion-body">
+                    Only if you enable records for the key.
+                  </div>
+                </details>
+              </div>
+            </div>
+
+            <div class="panel">
+              <h3>Menu</h3>
+              <p class="panel-note">A listbox-style menu with a separator and a disabled item.</p>
+              <ul class="menu" role="menu" aria-label="Key actions">
+                <li role="none"><button role="menuitem" type="button">Copy key <span class="menu-hint">⌘C</span></button></li>
+                <li role="none"><button role="menuitem" type="button">Rename</button></li>
+                <li role="none"><button role="menuitem" type="button">View records</button></li>
+                <li class="menu-sep" role="none">Danger</li>
+                <li role="none"><button role="menuitem" type="button" aria-disabled="true">Revoke (admin only)</button></li>
+                <li role="none"><button role="menuitem" type="button">Delete key</button></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= Navigation ================= -->
+        <section id="navigation">
+          <div class="section-head">
+            <h2>Navigation</h2>
+            <p>Tabs, breadcrumbs and paging</p>
+          </div>
+
+          <div class="grid cols-2">
+            <div class="panel">
+              <h3>Tabs</h3>
+              <p class="panel-note">The selected tab is marked with weight and a rule.</p>
+              <div class="tabs" role="tablist" aria-label="Key detail">
+                <button class="tab" role="tab" aria-selected="true" type="button">Usage</button>
+                <button class="tab" role="tab" aria-selected="false" type="button">Settings</button>
+                <button class="tab" role="tab" aria-selected="false" type="button">Records</button>
+              </div>
+              <p class="hint" style="margin-top: 14px">
+                Tabs switch a panel below; the panel keeps its own heading.
+              </p>
+            </div>
+
+            <div class="panel">
+              <h3>Breadcrumb and pagination</h3>
+              <p class="panel-note">Both say where you are without relying on colour.</p>
+              <nav class="crumbs" aria-label="Breadcrumb">
+                <a href="#navigation">Keys</a>
+                <span aria-hidden="true">/</span>
+                <a href="#navigation">prod</a>
+                <span aria-hidden="true">/</span>
+                <span aria-current="page">sk-live-000</span>
+              </nav>
+              <nav aria-label="Pagination" style="margin-top: 18px">
+                <ul class="pagination">
+                  <li><a class="page-link" href="#navigation" aria-disabled="true">‹</a></li>
+                  <li><a class="page-link" href="#navigation">1</a></li>
+                  <li><a class="page-link" href="#navigation" aria-current="page">2</a></li>
+                  <li><a class="page-link" href="#navigation">3</a></li>
+                  <li><a class="page-link" href="#navigation">›</a></li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="panel">
+              <h3>Vertical nav</h3>
+              <p class="panel-note">Settings-style list with counts.</p>
+              <ul class="listnav">
+                <li><a href="#navigation" aria-current="page">Overview</a></li>
+                <li><a href="#navigation">Members <span class="listnav-count">12</span></a></li>
+                <li><a href="#navigation">Packs <span class="listnav-count">6</span></a></li>
+                <li><a href="#navigation">Invites <span class="listnav-count">2</span></a></li>
+                <li><a href="#navigation">Audit log</a></li>
+              </ul>
+            </div>
+
+            <div class="panel">
+              <h3>Keyboard</h3>
+              <p class="panel-note">Shortcuts are written, not implied by an icon.</p>
+              <div class="stack-sm">
+                <p><kbd>K</kbd> search · <kbd>G</kbd><kbd>P</kbd> go to Packs</p>
+                <p><kbd>⌘</kbd><kbd>↵</kbd> send the request</p>
+                <p><kbd>Esc</kbd> close the dialog or drawer</p>
+                <p class="small muted">Every action above is also reachable from the UI.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= Data ================= -->
+        <section id="data">
+          <div class="section-head">
+            <h2>Data</h2>
+            <p>Numbers, tables, charts and code</p>
+          </div>
+
+          <div class="grid cols-3" style="margin-bottom: 20px">
+            <div class="kpi">
+              <span class="kpi-label">Requests today</span>
+              <span class="kpi-value">18,402</span>
+              <span class="kpi-delta">Across 6 models</span>
+            </div>
+            <div class="kpi">
+              <span class="kpi-label">Median latency</span>
+              <span class="kpi-value">412<span style="font-size: 1rem"> ms</span></span>
+              <span class="kpi-delta">First token</span>
+            </div>
+            <div class="kpi">
+              <span class="kpi-label">Error rate</span>
+              <span class="kpi-value">0.7<span style="font-size: 1rem"> %</span></span>
+              <span class="kpi-delta">Last 24 hours</span>
+            </div>
+          </div>
+
+          <div class="grid cols-2">
+            <div class="table-wrap">
+              <table>
+                <caption>Request records for this key</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Model</th>
+                    <th scope="col">Status</th>
+                    <th scope="col" class="num">Tokens</th>
+                    <th scope="col" class="num">Latency</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="mono">gpt-4.1</td>
+                    <td><span class="badge badge-ok"><span class="dot" aria-hidden="true"></span>200</span></td>
+                    <td class="num">1,204</td>
+                    <td class="num">318 ms</td>
+                  </tr>
+                  <tr>
+                    <td class="mono">claude-sonnet-4</td>
+                    <td><span class="badge badge-ok"><span class="dot" aria-hidden="true"></span>200</span></td>
+                    <td class="num">2,880</td>
+                    <td class="num">506 ms</td>
+                  </tr>
+                  <tr>
+                    <td class="mono">gemini-2.5-pro</td>
+                    <td><span class="badge badge-warn"><span class="dot" aria-hidden="true"></span>429</span></td>
+                    <td class="num">0</td>
+                    <td class="num">41 ms</td>
+                  </tr>
+                  <tr>
+                    <td class="mono">mistral-large</td>
+                    <td><span class="badge badge-err"><span class="dot" aria-hidden="true"></span>502</span></td>
+                    <td class="num">0</td>
+                    <td class="num">1,902 ms</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="2">Total</td>
+                    <td class="num">4,084</td>
+                    <td class="num">412 ms</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+
+            <div class="stack">
+              <div class="table-wrap">
+                <table class="table-striped table-sm">
+                  <caption>Striped, compact variant</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Slot</th>
+                      <th scope="col">State</th>
+                      <th scope="col" class="num">Uptime</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td class="mono">api-blue</td><td>Serving</td><td class="num">99.98%</td></tr>
+                    <tr><td class="mono">api-green</td><td>Idle</td><td class="num">99.95%</td></tr>
+                    <tr><td class="mono">web</td><td>Serving</td><td class="num">99.99%</td></tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="panel">
+                <h3>Mini chart</h3>
+                <p class="panel-note">Bars inherit the signal colour.</p>
+                <div class="chart" role="img" aria-label="Requests per hour over the last twelve hours">
+                  <span style="height: 38%"></span>
+                  <span style="height: 62%"></span>
+                  <span style="height: 45%"></span>
+                  <span style="height: 78%"></span>
+                  <span style="height: 56%"></span>
+                  <span style="height: 88%"></span>
+                  <span style="height: 70%"></span>
+                  <span style="height: 96%"></span>
+                  <span style="height: 64%"></span>
+                  <span style="height: 52%"></span>
+                  <span style="height: 74%"></span>
+                  <span style="height: 41%"></span>
+                </div>
+              </div>
+
+              <div class="panel">
+                <h3>Sparkline in a table cell</h3>
+                <p class="panel-note">A trend at a glance, with the value beside it.</p>
+                <div class="row">
+                  <div class="spark" style="width: 120px" role="img" aria-label="Rising trend over seven days">
+                    <span style="height: 30%"></span>
+                    <span style="height: 45%"></span>
+                    <span style="height: 40%"></span>
+                    <span style="height: 62%"></span>
+                    <span style="height: 58%"></span>
+                    <span style="height: 80%"></span>
+                    <span style="height: 92%"></span>
+                  </div>
+                  <span class="mono">18,402</span>
+                  <span class="badge badge-ok"><span class="dot" aria-hidden="true"></span>+12%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid cols-2" style="margin-top: 20px">
+            <div class="panel">
+              <h3>Code</h3>
+              <p class="panel-note">The board palette, not the page palette.</p>
+<pre class="code"><span class="c"># one call, any model</span>
+curl https://api.example/v1/chat/completions \
+  -H <span class="s">"Authorization: Bearer $KEY"</span> \
+  -d <span class="s">'{ </span><span class="k">"model"</span><span class="s">: "openai/gpt-4.1",</span>
+<span class="s">   </span><span class="k">"messages"</span><span class="s">: [{</span><span class="k">"role"</span><span class="s">: "user",</span>
+<span class="s">                 </span><span class="k">"content"</span><span class="s">: "Summarize this contract."}] }'</span></pre>
+            </div>
+
+            <div class="panel">
+              <h3>Diff and log</h3>
+              <p class="panel-note">Added and removed lines stay distinguishable without colour.</p>
+<pre class="code"><span class="diff-del">- "model": "gpt-4.1"</span><span class="diff-add">+ "model": "anthropic/claude-sonnet-4"</span></pre>
+<pre class="code" style="margin-top: 12px"><span class="c">14:02:11</span> <span class="s">api-blue</span> ready
+<span class="c">14:02:21</span> <span class="s">caddy</span>   switched upstream
+<span class="c">14:02:51</span> <span class="s">api-green</span> drained</pre>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= Tokens ================= -->
+        <section id="tokens">
+          <div class="section-head">
+            <h2>Tokens</h2>
+            <p>All 79 values behind this page</p>
+          </div>
+          <div class="table-wrap">
+            <table class="tokens">
+              <caption>
+                Read from <code>theme.css</code>. The same names drive the product, so a
+                component built here restyles automatically.
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Token</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                                  <tr>
+                    <td class="tok">--paper</td>
+                    <td><code>#e7ebe6</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--paper-2</td>
+                    <td><code>#dce2dc</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--sheet</td>
+                    <td><code>#f3f5f1</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--ink</td>
+                    <td><code>#142029</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--ink-2</td>
+                    <td><code>#4b5a63</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--ink-3</td>
+                    <td><code>#75847f</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--rule</td>
+                    <td><code>#c2cbc4</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--signal</td>
+                    <td><code>#f2a007</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--signal-soft</td>
+                    <td><code>#f9d98c</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--signal-hover</td>
+                    <td><code>#ffb21f</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--ink-hover</td>
+                    <td><code>#23384a</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--add</td>
+                    <td><code>#1d7a4e</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--del</td>
+                    <td><code>#b23a3a</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--board</td>
+                    <td><code>#142029</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--board-deep</td>
+                    <td><code>#0f1a22</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--board-2</td>
+                    <td><code>#1c2c37</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--board-rule</td>
+                    <td><code>#2b3d49</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--board-text</td>
+                    <td><code>#e7ebe6</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--board-dim</td>
+                    <td><code>#8597a0</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--ok-board</td>
+                    <td><code>#7fd7a8</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--err-board</td>
+                    <td><code>#ff9b8a</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--code-str</td>
+                    <td><code>#6b4a00</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--code-add-bg</td>
+                    <td><code>color-mix(in srgb, #3fbf7f 16%, transparent)</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--code-add-fg</td>
+                    <td><code>#6fdca5</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--code-del-bg</td>
+                    <td><code>color-mix(in srgb, #e05a5a 14%, transparent)</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--code-del-fg</td>
+                    <td><code>#f08c8c</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--code-del-text</td>
+                    <td><code>#c5a3a3</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--line-openai</td>
+                    <td><code>#2d5bd6</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--line-anthropic</td>
+                    <td><code>#b8336a</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--line-google</td>
+                    <td><code>#0e8a6f</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--line-mistral</td>
+                    <td><code>#7048c6</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--line-deepseek</td>
+                    <td><code>#5e8b1a</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--font</td>
+                    <td><code>"Overpass", system-ui, -apple-system, "Segoe UI", sans-serif</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--mono</td>
+                    <td><code>"Overpass Mono", ui-monospace, "Cascadia Mono", monospace</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--display</td>
+                    <td><code>var(--font)</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--display-weight</td>
+                    <td><code>800</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--display-tracking</td>
+                    <td><code>-0.025em</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--display-tracking-lg</td>
+                    <td><code>-0.035em</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--display-tracking-tight</td>
+                    <td><code>-0.04em</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--display-transform</td>
+                    <td><code>none</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--btn-weight</td>
+                    <td><code>600</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--btn-tracking</td>
+                    <td><code>0</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--btn-transform</td>
+                    <td><code>none</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--r-sm</td>
+                    <td><code>4px</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--r-md</td>
+                    <td><code>10px</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--r-lg</td>
+                    <td><code>18px</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--r-pill</td>
+                    <td><code>999px</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--bw</td>
+                    <td><code>2px</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--rule-w</td>
+                    <td><code>1px</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--bw-heavy</td>
+                    <td><code>3px</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--rule-style</td>
+                    <td><code>solid</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--shadow-card</td>
+                    <td><code>6px 6px 0 var(--ink)</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--shadow-btn</td>
+                    <td><code>none</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--shadow-btn-hover</td>
+                    <td><code>none</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--shadow-panel</td>
+                    <td><code>none</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--btn-hover-transform</td>
+                    <td><code>none</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--panel-blur</td>
+                    <td><code>none</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--section-y</td>
+                    <td><code>clamp(72px, 10vw, 136px)</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--size-base</td>
+                    <td><code>1.125rem</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--texture</td>
+                    <td><code>none</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--texture-size</td>
+                    <td><code>auto</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--texture-position</td>
+                    <td><code>0 0</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--texture-repeat</td>
+                    <td><code>repeat</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--texture-attachment</td>
+                    <td><code>scroll</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--accent-2</td>
+                    <td><code>#23384a</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--accent-3</td>
+                    <td><code>#f9d98c</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--add-text <span class="derived-tag">derived</span></td>
+                    <td><code>#1b734a</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--board-add-text <span class="derived-tag">derived</span></td>
+                    <td><code>#6fdca5</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--board-code-text <span class="derived-tag">derived</span></td>
+                    <td><code>#998350</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--board-del-text <span class="derived-tag">derived</span></td>
+                    <td><code>#c5a3a3</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--board-dim-text <span class="derived-tag">derived</span></td>
+                    <td><code>#8597a0</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--board-key-text <span class="derived-tag">derived</span></td>
+                    <td><code>#ad9b71</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--del-text <span class="derived-tag">derived</span></td>
+                    <td><code>#b23a3a</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--focus-ring <span class="derived-tag">derived</span></td>
+                    <td><code>#b77905</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--ink-3-text <span class="derived-tag">derived</span></td>
+                    <td><code>#5b6662</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--on-ink-muted <span class="derived-tag">derived</span></td>
+                    <td><code>#8597a0</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--on-signal <span class="derived-tag">derived</span></td>
+                    <td><code>#0a0a0a</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--signal-soft-text <span class="derived-tag">derived</span></td>
+                    <td><code>#0a0a0a</code></td>
+                  </tr>
+                  <tr>
+                    <td class="tok">--signal-text <span class="derived-tag">derived</span></td>
+                    <td><code>#905f04</code></td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <footer>
+          <p>
+            Placa — part of the MarvinRouter design set. Design notes in
+            <a href="DESIGN.md">DESIGN.md</a>.
+          </p>
+          <p class="mono">placa</p>
+        </footer>
+      </div>
+    </main>
+
+    <script>
+      // Dialogs: native <dialog>, so focus handling is the platform's.
+      document.querySelectorAll("[data-open-dialog]").forEach((trigger) => {
+        trigger.addEventListener("click", () => {
+          const dialog = document.getElementById(trigger.dataset.openDialog);
+          if (dialog) dialog.showModal();
+        });
+      });
+      document.querySelectorAll("[data-close-dialog]").forEach((button) => {
+        button.addEventListener("click", () => button.closest("dialog")?.close());
+      });
+      // Pressed-state controls: chips, segmented buttons, tabs.
+      document.querySelectorAll(".chip, .btn-group .btn").forEach((control) => {
+        control.addEventListener("click", () => {
+          const on = control.getAttribute("aria-pressed") === "true";
+          if (control.classList.contains("btn-group")) return;
+          const group = control.closest(".chip-row, .btn-group");
+          if (group && group.classList.contains("btn-group")) {
+            group.querySelectorAll('[aria-pressed="true"]').forEach((other) => {
+              other.setAttribute("aria-pressed", "false");
+            });
+            control.setAttribute("aria-pressed", "true");
+            return;
+          }
+          control.setAttribute("aria-pressed", String(!on));
+        });
+      });
+      // Tabs move the selection and keep one tab stop.
+      document.querySelectorAll(".tabs").forEach((list) => {
+        const tabs = [...list.querySelectorAll(".tab")];
+        tabs.forEach((tab) => {
+          tab.addEventListener("click", () => select(tab));
+          tab.addEventListener("keydown", (event) => {
+            const i = tabs.indexOf(tab);
+            let next = null;
+            if (event.key === "ArrowRight") next = tabs[(i + 1) % tabs.length];
+            if (event.key === "ArrowLeft") next = tabs[(i - 1 + tabs.length) % tabs.length];
+            if (next) {
+              event.preventDefault();
+              select(next);
+              next.focus();
+            }
+          });
+        });
+        function select(tab) {
+          tabs.forEach((t) => {
+            const on = t === tab;
+            t.setAttribute("aria-selected", String(on));
+            t.tabIndex = on ? 0 : -1;
+          });
+        }
+        select(tabs.find((t) => t.getAttribute("aria-selected") === "true") ?? tabs[0]);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+/*
+ * Placa — Signage on drawing paper.
+ *
+ * The complete token set. Every rule in design.css reads from these names,
+ * so this file is the whole visual identity: change a value here and the
+ * entire gallery follows.
+ *
+ * The second block below holds derived accessibility values. Each one is
+ * the designer's colour pushed toward the opposite end of the ramp until it
+ * clears its WCAG minimum against every surface it can land on -- page,
+ * sheet, and the tinted fills of badges and diff lines. They are generated
+ * and checked, not hand-picked; see build/verify.py in the design tooling.
+ */
+
+[data-theme="placa"] {
+  --paper: #e7ebe6;
+  --paper-2: #dce2dc;
+  --sheet: #f3f5f1;
+  --ink: #142029;
+  --ink-2: #4b5a63;
+  --ink-3: #75847f;
+  --rule: #c2cbc4;
+  --signal: #f2a007;
+  --signal-soft: #f9d98c;
+  --signal-hover: #ffb21f;
+  --ink-hover: #23384a;
+  --add: #1d7a4e;
+  --del: #b23a3a;
+  --board: #142029;
+  --board-deep: #0f1a22;
+  --board-2: #1c2c37;
+  --board-rule: #2b3d49;
+  --board-text: #e7ebe6;
+  --board-dim: #8597a0;
+  --ok-board: #7fd7a8;
+  --err-board: #ff9b8a;
+  --code-str: #6b4a00;
+  --code-add-bg: color-mix(in srgb, #3fbf7f 16%, transparent);
+  --code-add-fg: #6fdca5;
+  --code-del-bg: color-mix(in srgb, #e05a5a 14%, transparent);
+  --code-del-fg: #f08c8c;
+  --code-del-text: #c5a3a3;
+  --line-openai: #2d5bd6;
+  --line-anthropic: #b8336a;
+  --line-google: #0e8a6f;
+  --line-mistral: #7048c6;
+  --line-deepseek: #5e8b1a;
+  --font: "Overpass", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "Overpass Mono", ui-monospace, "Cascadia Mono", monospace;
+  --display: var(--font);
+  --display-weight: 800;
+  --display-tracking: -0.025em;
+  --display-tracking-lg: -0.035em;
+  --display-tracking-tight: -0.04em;
+  --display-transform: none;
+  --btn-weight: 600;
+  --btn-tracking: 0;
+  --btn-transform: none;
+  --r-sm: 4px;
+  --r-md: 10px;
+  --r-lg: 18px;
+  --r-pill: 999px;
+  --bw: 2px;
+  --rule-w: 1px;
+  --bw-heavy: 3px;
+  --rule-style: solid;
+  --shadow-card: 6px 6px 0 var(--ink);
+  --shadow-btn: none;
+  --shadow-btn-hover: none;
+  --shadow-panel: none;
+  --btn-hover-transform: none;
+  --panel-blur: none;
+  --section-y: clamp(72px, 10vw, 136px);
+  --size-base: 1.125rem;
+  --texture: none;
+  --texture-size: auto;
+  --texture-position: 0 0;
+  --texture-repeat: repeat;
+  --texture-attachment: scroll;
+  --accent-2: #23384a;
+  --accent-3: #f9d98c;
+
+  /* Derived for contrast; see the note above. */
+  --add-text: #1b734a;
+  --board-add-text: #6fdca5;
+  --board-code-text: #998350;
+  --board-del-text: #c5a3a3;
+  --board-dim-text: #8597a0;
+  --board-key-text: #ad9b71;
+  --del-text: #b23a3a;
+  --focus-ring: #b77905;
+  --ink-3-text: #5b6662;
+  --on-ink-muted: #8597a0;
+  --on-signal: #0a0a0a;
+  --signal-soft-text: #0a0a0a;
+  --signal-text: #905f04;
+
+  color-scheme: light;
+}
