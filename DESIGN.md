@@ -32,9 +32,10 @@ Core roles in this design:
 | `--signal` | `#f2a007` | Action and focus |
 | `--board` | `#142029` | Code and inverted panels |
 
-The design is 66 tokens. 13 further values are *derived*
-from them for contrast and noted as such in `theme.css` and at the end of the
-gallery. `theme.css` is the source of truth and the gallery prints every one.
+The design defines 66 tokens. 13 further values are
+*derived* from them for contrast, and are marked as such in `theme.css` and at
+the end of the gallery. `theme.css` is the source of truth; the gallery prints
+every value it contains.
 
 ## Typography
 
